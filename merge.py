@@ -24,7 +24,15 @@ def save_json_to_file(data, file_name):
             json_line = json.dumps(item, ensure_ascii=False)
             file.write(json_line + "\n")
 
+'''
 input_folder = 'input_folder'
+'''
+'''
+input_folder = 'original_en_data'
+input_folder = 'chinese_from_translation'
+input_folder = 'qa_data_specified_for_chatglm'
+'''
+input_folder = 'other_cn_ext'
 files = os.listdir(input_folder)
 
 merged_data = []
